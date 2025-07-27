@@ -1,3 +1,5 @@
+# Copied from https://github.com/psieg/Lightpack/blob/master/Software/apiexamples/pyLightpack/Animexamples.py
+
 #inaccurate pyLightpack class animation examples for 10 LED Lightpack configuration (3+2+3+2 clockwise from the left edge).
 import lightpack, time, re, random
 

@@ -1,3 +1,5 @@
+# Copied from https://github.com/psieg/Lightpack/blob/master/Software/apiexamples/pyLightpack/Animexamples.py
+
 import socket
 
 class lightpack:
