@@ -1,7 +1,7 @@
 # Setup to install Prismatik on Raspberry 1 B 
 This is a guide how i set up my old lightpack and raspberry pi 1 B for Remote control (no screen grabbing)
 
-(Running this currently lead to "error" response on setcolor api call, setstatus works properly)
+NOTE: (Running this currently lead to "error" response on setcolor api call, setstatus works properly see https://github.com/woodenshark/Lightpack/issues/69)
 
 1. Install raspios buster via Imager.
 2. Either compile on your own or use precompiled deb file
