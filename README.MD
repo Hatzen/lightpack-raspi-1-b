@@ -4,9 +4,8 @@ This is a guide how i set up my old lightpack and raspberry pi 1 B for Remote co
 NOTE: (Running this currently lead to "error" response on setcolor api call, setstatus works properly see https://github.com/woodenshark/Lightpack/issues/69)
 
 1. Install raspios buster via Imager.
-2. Either compile on your own or use precompiled deb file
-a.
-
+2. Either compile on your own or use precompiled deb file prismatik_armhf.deb within this repo and continue with 3
+```
 sudo apt install qt5-qmake qtbase5-dev
 sudo apt install libqt5serialport5-dev
 sudo apt update && sudo apt install -y \
@@ -23,13 +22,8 @@ sudo apt update && sudo apt install -y \
   libfftw3-dev
 sudo apt-get install hashdeep
 
-
 git clone https://github.com/psieg/Lightpack.git ~/lightpack
 ~/lightpack/Software/dist_linux/build-natively.sh dpkg
-
-
-b.
-
 sudo apt-get install libappindicator1
 sudo apt update
 sudo apt-get install -f
@@ -40,7 +34,7 @@ nano deb/DEBIAN/control
 amd64-> armhf
 
 dpkg-deb --build deb prismatik_armhf.deb
-
+```
 3. 
 finally install
 dpkg-deb --build deb prismatik_armhf.deb
